@@ -19,15 +19,13 @@ const App = () => {
     };
   }, []);
   const data1 = data;
-  const listItems = data1.map((d,index=0) => {
+  const listItems = data1.map((d,index) => {
     return (
-      <>
-        <li key={d.image}>
-          {d.name} , {d.status}, {d.species}, {d.type ? d.type : "no type"},
-          {d.gender}, {d.created}
-          <img src={d.image} alt={d.name} />
-        </li>
-      </>
+      <li key={index}>
+        {d.name} , {d.status}, {d.species}, {d.type ? d.type : "no type"},
+        {d.gender}, {d.created}
+        <img key={d.image} src={d.image} alt={d.name} />
+      </li>
     );
    
   });
