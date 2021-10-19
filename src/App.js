@@ -21,9 +21,15 @@ const App = () => {
   const data1 = data;
   const listItems = data1.map((d,index) => {
     return (
-      <li key={index}>
-        {d.name} , {d.status}, {d.species}, {d.type ? d.type : "no type"},
-        {d.gender}, {d.created}
+      <li key={index} className="list">
+        <ul className="list--style">
+          <li>{d.name}</li>
+          <li> {d.status}</li>
+          <li>{d.species}</li>
+          <li>{d.type ? d.type : "no type"}</li>
+          <li>{d.gender}</li>
+          <li>{d.created}</li>
+        </ul>
         <img key={d.image} src={d.image} alt={d.name} />
       </li>
     );
