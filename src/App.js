@@ -3,7 +3,7 @@ import { useEffect, useState } from 'react';
 
 
 const App = () => {
-   const [data, setData] = useState({});
+   const [data, setData] = useState([]);
   useEffect(() => {
     const req = new XMLHttpRequest();
     req.open("GET", "https://rickandmortyapi.com/api/character", true);
@@ -17,16 +17,25 @@ const App = () => {
         setData(results);
       }
     };
-  }, [data]);
-  const data1 = [1, 2, 3, 4];
-  const listItems = data1.map(d => <li>{d}</li>);
+  }, []);
+  const data1 = data;
+  const listItems = data1.map((d,index=0) => {
+    return (
+      <>
+        <li key={d.image}>
+          {d.name} , {d.status}, {d.species}, {d.type ? d.type : "no type"},
+          {d.gender}, {d.created}
+          <img src={d.image} alt={d.name} />
+        </li>
+      </>
+    );
+   
+  });
   return (
-    <div className="App">
-      <ol>
-        {
-          listItems
-        }
-      </ol>
+    <div >
+      <ul  className="conteiner">
+        {listItems}
+      </ul>
     </div>
   );
 }
