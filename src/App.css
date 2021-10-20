@@ -8,8 +8,8 @@
   list-style-type: none;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-gap: 10px ;
-  
+  grid-gap: 40px ;
+  padding: 0;
 }
 .list {
   background-color: #324057;
@@ -18,7 +18,7 @@
   list-style-type: none;
   justify-content: space-between;
   align-items: center;
-  gap: 40px;
+  gap: 10px;
   
 }
 .list--style {
@@ -38,7 +38,7 @@ color: #FF4949;
 .image {
   border-radius:  0px 8px  8px 0px;
 }
-@media only screen and (max-width: 780px) {
+@media only screen and (max-width: 1053px) {
   .conteiner {
   list-style-type: none;
   display: grid;
