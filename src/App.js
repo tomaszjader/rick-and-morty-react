@@ -23,8 +23,11 @@ const App = () => {
     return (
       <li key={index} className="list">
         <ul className="list--style">
-          <li>{d.name}</li>
-          <li> {d.status}</li>
+          <li className="list--header">{d.name}</li>
+          <li className={d.status === "Alive" ? "alive" : "dead"}>
+            {" "}
+            {d.status}
+          </li>
           <li>{d.species}</li>
           <li>{d.type ? d.type : "no type"}</li>
           <li>{d.gender}</li>

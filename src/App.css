@@ -26,6 +26,17 @@
 .list--style {
   list-style-type: none;
 }
+.list--header {
+  color: #20A0FF;
+  font: bold;
+  font-size: large;
+}
+.alive {
+  color: #13CE66;
+} 
+.dead {
+color: #FF4949;
+}
 @media only screen and (max-width: 600px) {
   .conteiner {
   list-style-type: none;
