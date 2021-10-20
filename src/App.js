@@ -25,7 +25,6 @@ const App = () => {
         <ul className="list--style">
           <li className="list--header">{d.name}</li>
           <li className={d.status === "Alive" ? "alive" : "dead"}>
-            {" "}
             {d.status}
           </li>
           <li>{d.species}</li>
@@ -33,7 +32,7 @@ const App = () => {
           <li>{d.gender}</li>
           <li>{d.created}</li>
         </ul>
-        <img key={d.image} src={d.image} alt={d.name} />
+        <img className="image" key={d.image} src={d.image} alt={d.name} />
       </li>
     );
    
