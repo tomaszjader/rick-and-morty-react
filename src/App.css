@@ -13,11 +13,35 @@
 :-ms-input-placeholder {  
    text-align: center; 
 }
+a {
+  color: #20a0ff;
+  font-family: helvetica;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+a:active {
+  color: black;
+}
+
+a:visited {
+  color: purple;
+}
 .App {
   display: flex;
   align-items: center;
   justify-content: center;
   
+}
+.nav-bar {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 .serch-input {
   width: 300px;
@@ -27,7 +51,10 @@
   justify-content: center;
   align-items: center;
 }
-.serch{
+.list-nav {
+  margin: 10px;
+}
+.serch {
  display: flex;
   align-items: center;
   justify-content: center;
@@ -72,5 +99,13 @@
     display: grid;
     grid-template-columns: 1fr;
     grid-gap: 40px;
+    min-height: 100vh;
   }
+  .nav-bar {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 }
