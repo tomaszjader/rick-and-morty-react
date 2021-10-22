@@ -46,7 +46,7 @@ a:visited {
 .serch-input {
   width: 300px;
   height: 40px;
-  font-size: 20px;
+  
   display: flex;
   justify-content: center;
   align-items: center;
@@ -54,7 +54,7 @@ a:visited {
 .list-nav {
   margin: 10px;
 }
-.serch {
+.serch{
  display: flex;
   align-items: center;
   justify-content: center;
@@ -93,7 +93,11 @@ a:visited {
 .image {
   border-radius: 0px 8px 8px 0px;
 }
+
 @media only screen and (max-width: 1053px) {
+  body{
+    font-size: small;
+  }
   .conteiner {
     list-style-type: none;
     display: grid;
@@ -107,5 +111,30 @@ a:visited {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+img {
+ 
+  
+  max-width: 20vh;
+  
+}
+.list--style {
+  list-style-type: none;
+  list-style: none;
+  padding: 0;
+  text-align: center;
+}
+
+.list {
+  background-color: #324057;
+  border-radius: 8px 8px 8px 8px;
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ justify-content: center;
+}
+.image {
+  border-radius: 8px 8px 8px 8px;
 }
 }

@@ -85,12 +85,12 @@ const App = () => {
   }, []);
 
   return (
-    <main >
-      <div className="serch" id='top'>
+    <main className="main">
+      <div className="serch" id="top">
         <input
           className="serch-input"
           type="text"
-          placeholder="Give the name of the character:"
+          placeholder="Choose a character:"
           onChange={(event) => {
             setSearch(event.target.value);
           }}
