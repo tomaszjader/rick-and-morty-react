@@ -1,6 +1,6 @@
 # Rick and Morty Character Browser
 
-An application for browsing characters from the **Rick and Morty** series. It is built with **React** and allows users to:
+An application for browsing characters from the **Rick and Morty** series. It is built with **React**, **CSS** and allows users to:
 
 - Display characters fetched from the [Rick and Morty API](https://rickandmortyapi.com/).
 - Search for characters by name on the current page.
