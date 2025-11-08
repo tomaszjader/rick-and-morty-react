@@ -19,3 +19,7 @@ To run the application locally, follow these steps:
 ```sh
    npm run builld
 ```
+#. **Start the application:**:
+```sh
+   npm run start
+```
